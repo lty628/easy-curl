@@ -1,0 +1,12 @@
+{
+    "name": "lty628/easy-curl",
+    "description": "请求包",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Lty628\\EasyCurl\\": "src/"
+        }
+    },
+    "require": {}
+}
