@@ -9,25 +9,6 @@ use GuzzleHttp\Psr7\Request;
  */
 class MultipleCurl
 {
-    protected $client;
-    protected $timeOut = 5;
-    protected static $instance;
-    protected $result = [];
-
-    protected function __construct()
-    {
-        $this->client = new Client([
-            'timeout' => $this->timeOut,
-        ]);
-    }
-
-    public static function getInstance()
-    {
-        if (!self::$instance) {
-            self::$instance = new self();
-        }
-        return self::$instance;
-    }
 
     // raw 方式
     protected function initRawMultiple($url, $params, $method, $headers = [])

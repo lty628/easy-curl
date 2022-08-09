@@ -6,22 +6,6 @@ use GuzzleHttp\Exception\RequestException;
 
 class SingleCurl
 {
-    // curl实例
-    protected $client;
-    protected $guzzleHeader = [
-            // 'auth' => ['admin', 'admin'],
-            'timeout'=> 10,
-            'http_errors'=>false,
-        ];
-
-
-    public function __construct()
-    {
-        $this->header = $this->guzzleHeader;
-        $this->client = new Client();
-    }
-
-
     // 发送post请求
     public function curlApiPost($api, $header, $params = '')
     {
